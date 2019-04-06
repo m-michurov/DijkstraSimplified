@@ -9,7 +9,7 @@ static inline unsigned short closest_vertex(
     unsigned int min_distance = UINT_MAX;
 
     for (unsigned short t = 0; t < graph->vertices; t++) {
-        if (graph->distance[t] <= min_distance && graph->adjacency_matrix[offset(t) + t] != PROCESSED) {
+        if (graph->distance[t] <= min_distance && graph->adjacency_matrix[offset(t, t)] != PROCESSED) {
             min_distance = graph->distance[t];
             v = t;
         }
@@ -37,14 +37,14 @@ int FindDistance(
         {
             v = closest_vertex(graph);
 
-            graph->adjacency_matrix[offset(v) + v] = PROCESSED;
+            graph->adjacency_matrix[offset(v, v)] = PROCESSED;
 
             for (unsigned short u = 0; u < graph->vertices; u++)
             {
-                if (graph->adjacency_matrix[offset(u > v ? u : v) + (u > v ? v : u)] != UINT_MAX
-                    && graph->adjacency_matrix[offset(u) + u] != PROCESSED)
+                if (graph->adjacency_matrix[offset(v,  u)] != UINT_MAX
+                    && graph->adjacency_matrix[offset(u, u)] != PROCESSED)
                 {
-                    current_distance = graph->adjacency_matrix[offset(u > v ? u : v) + (u > v ? v : u)] + graph->distance[v];
+                    current_distance = graph->adjacency_matrix[offset(v,  u)] + graph->distance[v];
 
                     if (current_distance >= OVERFLOW || graph->distance[v] >= OVERFLOW)
                     {

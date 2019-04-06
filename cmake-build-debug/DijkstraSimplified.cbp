@@ -74,12 +74,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/CLionProjects/DijkstraSimplified/binheap.c">
-			<Option target="Dijkstra"/>
-		</Unit>
-		<Unit filename="E:/CLionProjects/DijkstraSimplified/binheap.h">
-			<Option target="Dijkstra"/>
-		</Unit>
 		<Unit filename="E:/CLionProjects/DijkstraSimplified/dijkstra.c">
 			<Option target="Dijkstra"/>
 		</Unit>

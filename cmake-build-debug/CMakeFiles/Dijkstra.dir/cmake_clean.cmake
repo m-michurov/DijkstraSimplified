@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Dijkstra.dir/main.c.obj"
   "CMakeFiles/Dijkstra.dir/graph.c.obj"
   "CMakeFiles/Dijkstra.dir/dijkstra.c.obj"
-  "CMakeFiles/Dijkstra.dir/binheap.c.obj"
   "Dijkstra.pdb"
   "Dijkstra.exe"
   "Dijkstra.exe.manifest"

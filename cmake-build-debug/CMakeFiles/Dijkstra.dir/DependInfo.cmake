@@ -4,7 +4,6 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/CLionProjects/DijkstraSimplified/binheap.c" "E:/CLionProjects/DijkstraSimplified/cmake-build-debug/CMakeFiles/Dijkstra.dir/binheap.c.obj"
   "E:/CLionProjects/DijkstraSimplified/dijkstra.c" "E:/CLionProjects/DijkstraSimplified/cmake-build-debug/CMakeFiles/Dijkstra.dir/dijkstra.c.obj"
   "E:/CLionProjects/DijkstraSimplified/graph.c" "E:/CLionProjects/DijkstraSimplified/cmake-build-debug/CMakeFiles/Dijkstra.dir/graph.c.obj"
   "E:/CLionProjects/DijkstraSimplified/main.c" "E:/CLionProjects/DijkstraSimplified/cmake-build-debug/CMakeFiles/Dijkstra.dir/main.c.obj"

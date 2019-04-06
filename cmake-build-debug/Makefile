@@ -122,33 +122,6 @@ Dijkstra/fast:
 	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/build
 .PHONY : Dijkstra/fast
 
-binheap.obj: binheap.c.obj
-
-.PHONY : binheap.obj
-
-# target to build an object file
-binheap.c.obj:
-	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/binheap.c.obj
-.PHONY : binheap.c.obj
-
-binheap.i: binheap.c.i
-
-.PHONY : binheap.i
-
-# target to preprocess a source file
-binheap.c.i:
-	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/binheap.c.i
-.PHONY : binheap.c.i
-
-binheap.s: binheap.c.s
-
-.PHONY : binheap.s
-
-# target to generate assembly for a file
-binheap.c.s:
-	$(MAKE) -f CMakeFiles\Dijkstra.dir\build.make CMakeFiles/Dijkstra.dir/binheap.c.s
-.PHONY : binheap.c.s
-
 dijkstra.obj: dijkstra.c.obj
 
 .PHONY : dijkstra.obj
@@ -239,9 +212,6 @@ help:
 	@echo ... Dijkstra
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... binheap.obj
-	@echo ... binheap.i
-	@echo ... binheap.s
 	@echo ... dijkstra.obj
 	@echo ... dijkstra.i
 	@echo ... dijkstra.s

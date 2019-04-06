@@ -45,7 +45,7 @@ int main(
         src--;
         dst--;
 
-        graph->adjacency_matrix[offset(dst > src ? dst : src) + (dst > src ? src : dst)] = (unsigned int) length;
+        graph->adjacency_matrix[offset(src, dst)] = (unsigned int) length;
     }
 
     result = FindDistance(graph, (unsigned short) end);
